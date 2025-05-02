@@ -1,6 +1,6 @@
 def main ():
     usersinput = input()
-    print(*usersinput.split())
+    print(usersinput(convert(face)))
 
 def convert(face):
     if face = ":)" return "😐"
