@@ -4,7 +4,7 @@ def Main()
 
 
 def convert(str):
-    str.Replace(":)","😐")
+    str.replace(":)","😐")
     return str
 
-Main()
+main()
