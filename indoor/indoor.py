@@ -1,1 +1,3 @@
-input()
+words = input().lower()
+
+print(words)
