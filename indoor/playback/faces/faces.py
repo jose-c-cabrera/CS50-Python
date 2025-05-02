@@ -1,10 +1,9 @@
-def Main()
+def main():
     usersinput = input()
-    convert(usersinput)
+    print(convert(usersinput))
 
 
 def convert(str):
-    str.replace(":)","😐")
-    return str
+   return str.replace(":)","😐")
 
 main()
