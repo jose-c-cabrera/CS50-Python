@@ -1,2 +1,2 @@
 usersinput = input()
-print("...".join(usersinput))
+print(*usersinput.split(), sep="...")
