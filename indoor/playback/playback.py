@@ -1,2 +1,2 @@
 usersinput = input()
-print("Hello", usersinput, sep="...")
+print(usersinput, sep="...")
