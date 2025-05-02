@@ -1,9 +1,12 @@
 def main():
-    usersinput = input()
-    print(convert(usersinput))
+    usersInput = input()
+    #converted = convert(usersInput)
+    print(convert(usersInput))
 
 
-def convert(str):
-   return str.replace(":)","😐")
+def convert(to):
+   new = to.replace(":)","😐")
+   new = newto.replace(":(","🙂")
+   return newto
 
 main()
