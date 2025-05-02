@@ -1,7 +1,7 @@
 def main():
     usersInput = input()
-    #converted = convert(usersInput)
-    print(convert(usersInput))
+    converted = convert(usersInput)
+    print(converted)
 
 
 def convert(to):
@@ -10,3 +10,4 @@ def convert(to):
    return new
 
 main()
+
