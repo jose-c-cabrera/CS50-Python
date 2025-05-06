@@ -1,0 +1,3 @@
+filetype = input("File name:" )
+
+
