@@ -1,7 +1,12 @@
 def main():
     actualTime = input("What time is it? ")
     convert(actualTime)
-    if >= 7 actualTime <8
+    if actualTime >= 7 and < 8:
+        print("breakfast time")
+    elif actualTime >=12 and < 13:
+        print("lunch time")
+    elif actualTime >=18 and < 19:
+        print("dinner time")
 
 
 def convert(time):
