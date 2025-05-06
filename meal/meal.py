@@ -4,9 +4,9 @@ def main():
 
     if 7 <= timeInHours < 8:
         print("breakfast time")
-    elif 12 <= timeInHours < 13:
+    elif 12 <= timeInHours <= 13:
         print("lunch time")
-    elif 18 <= timeInHours < 19:
+    elif 18 <= timeInHours <= 19:
         print("dinner time")
 
 
