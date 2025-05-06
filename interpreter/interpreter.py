@@ -4,11 +4,11 @@ x,y,z = operation.split(" ")
 
 match y:
     case "+":
-        print(round(float(int(x)+int(z))),2)
+        print(round(float(int(x)+int(z)),1))
     case "-":
-        print(round(float(int(x)-int(z))),2)
+        print(round(float(int(x)-int(z)),1))
     case"*":
-        print(round(float(int(x)*int(z))),2)
+        print(round(float(int(x)*int(z)),1))
     case"/":
-        print(round(float(int(x)/int(z))),2)
+        print(round(float(int(x)/int(z)),1))
 
