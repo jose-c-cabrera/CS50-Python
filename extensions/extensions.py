@@ -2,9 +2,9 @@ filetype = input("File name:" ).strip().lower()
 
 if filetype.endswith(".gif"):
     print("image/gif")
-elif filetype.endswith(".jpg",):
-    print("image/jpg")
-elif filetype.endswith(".jpeg","jpg"):
+elif filetype.endswith(".jpg"):
+    print("image/jpeg")
+elif filetype.endswith(".jpg"):
     print("image/jpeg")
 elif filetype.endswith(".png"):
     print("image/png")
