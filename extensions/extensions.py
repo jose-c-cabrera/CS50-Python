@@ -2,17 +2,17 @@ filetype = input("File name:" ).strip().lower()
 
 if filetype.endswith(".gif"):
     print("image/gif")
-elif filetype.endwith(".jpg"):
+elif filetype.endswith(".jpg"):
     print("image/jpg")
-elif filetype.endwith(".jpeg"):
+elif filetype.endswith(".jpeg"):
     print("image/jpeg")
-elif filetype.endwith(".png"):
+elif filetype.endswith(".png"):
     print("image/png")
-elif filetype.endwith(".pdf"):
+elif filetype.endswith(".pdf"):
     print("application/pdf")
-elif filetype.endwith(".txt"):
+elif filetype.endswith(".txt"):
     print("text/plain")
-elif filetype.endswith(".zip")
+elif filetype.endswith(".zip"):
     print("application/zip")
 else:
     print("application/octet-stream")
