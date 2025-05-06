@@ -1,3 +1,3 @@
-filetype = input("File name:" )
+filetype = input("File name:" ).split()
 
 match
