@@ -24,11 +24,12 @@ def is_valid(proposition):
 
     for i in range(len(proposition)):
         if proposition[i].isdigit():
-            if proposition[i] =='0':
+            if proposition[i] == '0':
                 return False
-        if not proposition[i:].isdigit():
-            return False
-        break
+            if not proposition[i:].isdigit():
+                return False
+            break
+
     return True
 
 main ()
