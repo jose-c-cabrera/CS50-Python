@@ -7,7 +7,7 @@ def remove_vowels(string):
 
     for char in string:
         if char == 'a' or char =='e' or char== 'i' or char == 'o' or char == 'u':
-            twitter_word = char
+            continue
         else:
             twitter_word+=char
     return (twitter_word)
