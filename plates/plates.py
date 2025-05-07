@@ -12,4 +12,4 @@ def main():
         print("Invalid")
 
 def is_valid(proposition)
-    
+    for char in proposition
