@@ -12,10 +12,12 @@ def main():
         print("Invalid")
 
 def is_valid(proposition):
+
+    if not proposition.isalnum():
+        return False
+
     for char in set(proposition):
         count = proposition.count(char)
         if count > 6 or count < 2:
             return False
-        else:
-            continue
-        if proposition.contains()
+
