@@ -11,7 +11,7 @@ def main():
     else:
         print("Invalid")
 
-def is_valid(proposition)
+def is_valid(proposition):
     for char in proposition:
         if char.count() > 6 or char.count()<2:
             return False
