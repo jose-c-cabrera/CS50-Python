@@ -1,6 +1,6 @@
 def main ():
     user_input = input("Input: ")
-    remove_vowels(user_input)
+    print(remove_vowels(user_input))
 
 def remove_vowels(string):
     twitter_word = ""
