@@ -24,5 +24,5 @@ def is_valid(proposition):
     if proposition[0:2].isdigit():
         return False
 
-    if proposition [2:]
+    return True
 
