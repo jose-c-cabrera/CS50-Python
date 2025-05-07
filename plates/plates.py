@@ -12,6 +12,7 @@ def main():
         print("Invalid")
 
 def is_valid(proposition):
-    for char in proposition:
-        if char.count() > 6 or char.count()<2:
+    for char in set(proposition):
+        count = proposition.count(char)
+        if count > 6 or count < 2
             return False
