@@ -13,23 +13,22 @@ def main():
 
 def is_valid(proposition):
 
-    if not proposition.isalnum():
+    if len(proposition) < 2 or len(proposition) > 6:
         return False
-
-    for char in set(proposition):
-        count = proposition.count(char)
-        if count > 6 or count < 2:
-            return False
 
     if proposition[0:2].isdigit():
         return False
 
-    for char in proposition:
-        if char.isdigit():
-            if char == '0':
-                return False
-            break
+    if not proposition.isalnum():
+        return False
 
+    for i in range(len(proposition)):
+        if proposition[i].isdigit():
+            if proposition[i] =='0':
+                return False
+        if not proposition[i:].isdigit():
+                return False
+        break
     return True
 
 main ()
