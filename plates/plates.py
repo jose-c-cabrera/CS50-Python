@@ -21,3 +21,8 @@ def is_valid(proposition):
         if count > 6 or count < 2:
             return False
 
+    if proposition[0:2].isdigit():
+        return False
+
+    if proposition [2:]
+
