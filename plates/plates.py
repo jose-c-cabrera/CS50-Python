@@ -24,5 +24,14 @@ def is_valid(proposition):
     if proposition[0:2].isdigit():
         return False
 
+    for char in proposition:
+        if char.isdigit():
+            if char == '0':
+                return False
+            break
+
     return True
+
+main ()
+
 
