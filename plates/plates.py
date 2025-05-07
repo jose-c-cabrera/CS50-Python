@@ -14,6 +14,8 @@ def main():
 def is_valid(proposition):
     for char in set(proposition):
         count = proposition.count(char)
-        if count > 6 or count < 2
+        if count > 6 or count < 2:
             return False
-    
+        else:
+            continue
+        if proposition.contains()
