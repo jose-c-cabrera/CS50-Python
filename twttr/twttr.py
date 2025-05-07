@@ -1,4 +1,7 @@
-user_input = input("Input: ")
+string = input("Input: ")
 
-for char in user_input:
-    if char == 'a' or char =='e' or char== 'i' or char == 'o' or char == 'u'
+def remove_vowels(string):
+    for char in string:
+        if char == 'a' or char =='e' or char== 'i' or char == 'o' or char == 'u':
+            user_input -= char
+            print user_input
