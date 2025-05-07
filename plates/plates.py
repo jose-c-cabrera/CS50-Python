@@ -16,7 +16,7 @@ def is_valid(proposition):
     if len(proposition) < 2 or len(proposition) > 6:
         return False
 
-    if proposition[0:2].isdigit():
+    if not proposition[0:2].isalpha():
         return False
 
     if not proposition.isalnum():
@@ -27,7 +27,7 @@ def is_valid(proposition):
             if proposition[i] =='0':
                 return False
         if not proposition[i:].isdigit():
-                return False
+            return False
         break
     return True
 
