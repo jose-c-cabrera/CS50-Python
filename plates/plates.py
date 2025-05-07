@@ -16,3 +16,4 @@ def is_valid(proposition):
         count = proposition.count(char)
         if count > 6 or count < 2
             return False
+    
