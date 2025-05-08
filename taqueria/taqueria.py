@@ -12,6 +12,6 @@ menu = {
 
 while True:
     item = input("Item: ").title()
-    print(f"Total: $ {["price"]}")
-    total += "price"
+    print(f"Total: $ {menu["price"]}")
+
 
