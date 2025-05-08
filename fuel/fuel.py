@@ -10,7 +10,7 @@ while True:
 
 if percentage > 1 and percentage < 99:
     print(f"{percentage}%")
-elif percentage < 1:
+elif percentage <= 1:
     print("E")
 else:
     print("F")
