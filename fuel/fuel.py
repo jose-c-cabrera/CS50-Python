@@ -2,18 +2,21 @@ while True:
     try:
         users_input = input("Fraction: ")
         x,y = users_input.split(sep='/')
-        percentage = round((int(x)/int(y))*100)
+        x = int(x)
+        y = int(y)
+        if x > y:
+            continue
+        percentage = round((x/y)*100)
     except (ValueError, ZeroDivisionError):
         pass
     else:
         break
 
-if percentage > 1 and percentage < 99:
-    print(f"{percentage}%")
+if percentage >= 99:
+    print("F")
 elif percentage <= 1:
     print("E")
 else:
-    print("F")
-
+    print(f"{percentage}%")
 
 
