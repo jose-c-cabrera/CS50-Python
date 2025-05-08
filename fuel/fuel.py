@@ -1,5 +1,5 @@
 
 fraction = int(input("Fraction: "))
-print(f")
+print(f"{fraction}%")
 
 
