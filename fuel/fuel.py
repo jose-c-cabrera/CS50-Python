@@ -8,8 +8,12 @@ while True:
     else:
         break
 percentage = f"{fraction}%"
-if 
-print(percentage)
+if percentage > 1 and percentage < 99:
+    print(percentage)
+elif percentage < 1:
+    print("E")
+else:
+    print("F")
 
 
 
