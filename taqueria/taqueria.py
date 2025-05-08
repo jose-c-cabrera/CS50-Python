@@ -11,5 +11,6 @@ menu = {
 }
 
 while True:
-    item = input("Item: ").Title()
+    item = input("Item: ").title()
+    print(f"Total: $ {})
 
