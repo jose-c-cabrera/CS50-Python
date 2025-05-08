@@ -1,3 +1,4 @@
 
-fraction = int(input("X/Y"))
+fraction = int(input("Fraction: "))
+
 
