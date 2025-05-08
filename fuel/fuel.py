@@ -1,9 +1,10 @@
 
 input = input("Fraction: ")
 x,y = input.split(sep='/')
-fraction = (f"{((int(x)/int(y)))*100}%")
+fraction = round((int(x)/iny(y))*100)
+percentage = f"{fraction}%"
 
-print(fraction)
+print(percentage)
 
 
 
