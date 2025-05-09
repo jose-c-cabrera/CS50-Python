@@ -1,5 +1,17 @@
 
-dates = []
+dates = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
 
 date = input("Date: ").strip()
 
