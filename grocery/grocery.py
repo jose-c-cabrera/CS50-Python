@@ -1,4 +1,6 @@
-item = input().upper()
+while True:
+    try:
+        item = input().upper()
 
-while True
+
 
