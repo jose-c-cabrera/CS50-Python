@@ -13,7 +13,7 @@ while True:
     except EOFError:
         break
 
-for item in grocery:
+for item in sorted(grocery):
     print(f"{grocery[item]} {item}")
 
 
