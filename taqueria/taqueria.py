@@ -1,17 +1,22 @@
 menu = {
-    "name": "Baja Taco", "price" : 4.25,
-    "name": "Burrito", "price" : 7.50,
-    "name": "Bowl", "price" : 8.50,
-    "name": "Nachos", "price" : 11.00,
-    "name": "Quesadilla", "price" : 8.50,
-    "name": "Super Burrito", "price" : 8.50,
-    "name": "Super Quesadilla", "price" : 9.50,
-    "name": "Taco", "price" : 3.00,
-    "name": "Tortilla Salad", "price" : 8.00
+    "Baja Taco": 4.25,
+    "Burrito": 7.50,
+    "Bowl": 8.50,
+    "Nachos": 11.00,
+    "Quesadilla": 8.50,
+    "Super Burrito": 8.50,
+    "Super Quesadilla": 9.50,
+    "Taco": 3.00,
+    "Tortilla Salad": 8.00
 }
 
+total = 0.0
+
 while True:
-    item = input("Item: ").title()
-    print(f"Total: $ {menu["price"]}")
-
-
+    try:
+        item = input("Item: ").title()
+        if item in menu:
+            total += menu[item]
+            print(f"Total: ${total:.2f}")
+    except EOFError:
+        break
