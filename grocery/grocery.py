@@ -1,11 +1,17 @@
 grocery = {
 
 }
+count = 0
 while True:
     try:
         item = input().upper()
-        get(key) = grocery
+        get(item) = grocery
+
+        if item in grocery:
+            count += 1
+
     except EOFError:
+        break
 
 
 
