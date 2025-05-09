@@ -14,4 +14,5 @@ dates = [
 ]
 
 date = input("Date: ").strip()
+day,month,year = 
 
