@@ -11,7 +11,7 @@ def shorten(word):
             continue
         else:
             twitter_word+=char
-    return (twitter_word)
+    return print(twitter_word)
 
 if __name__ == "__main__":
     main()
