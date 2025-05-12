@@ -1,9 +1,10 @@
 
-dates = [
+months = [
     "January",
     "February",
     "March",
     "April",
+    "May",
     "June",
     "July",
     "August",
@@ -13,34 +14,28 @@ dates = [
     "December"
 ]
 
-date = input("Date: ").strip()
-day,month,year = date.rsplit(sep= " ")
+while True:
+    date = input("Date: ").strip()
 
-match month:
-    case "January":
-        print("01")
-    case "February":
-        print("02")
-    case "March":
-        print("03")
-    case "April":
-        print("04")
-    case "May":
-        print("05")
-    case "June":
-        print("06")
-    case "July":
-        print("07")
-    case "August":
-        print("08")
-    case "September":
-        print("09")
-    case "October":
-        print("10")
-    case "November":
-        print("11")
-    case "December":
-        print("12")
+    try:
+        if "/" in date:
+            m, d, y = date.split("/")
+            m, d = int(m), int(d)
+
+        else:
+            if "," not in date:
+                raise ValueError("Missing comma")
+
+            month_name, d, y = date.replace(",", "").split()
+            m = months.index(month_name) + 1
+            d = int(d)
+
+        if 1 <= m <= 12 and 1 <= d <= 31:
+            print(f"{int(y):04}-{m:02}-{d:02}")
+            break
+
+    except (ValueError, IndexError):
+        continue
 
 
 
