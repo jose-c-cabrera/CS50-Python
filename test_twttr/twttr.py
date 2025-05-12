@@ -1,10 +1,8 @@
 def main():
+    word = input("Input: ")
+    print(shorten(word))
 
 def shorten(word):
-    word = input("Input: ")
-    print(remove_vowels(word))
-
-def remove_vowels(string):
     twitter_word = ""
 
     for char in string:
