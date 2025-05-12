@@ -1,11 +1,12 @@
+
 def main():
-    word = input("Input: ")
-    print(shorten(word))
+    string = input("Input: ")
+    print(shorten(string))
 
 def shorten(word):
     twitter_word = ""
 
-    for char in string:
+    for char in word:
         if char == 'a' or char =='e' or char== 'i' or char == 'o' or char == 'u'or char == 'A' or char =='E' or char== 'I' or char == 'O' or char == 'U':
             continue
         else:
