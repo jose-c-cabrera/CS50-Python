@@ -4,6 +4,9 @@ from plates import is_valid
 def test_hello():
     assert is_valid("AA") == True
 
+def test_correct():
+    assert is_valid("JHW20") == True
+
 def test_CS50():
     assert is_valid("??") == False
 
