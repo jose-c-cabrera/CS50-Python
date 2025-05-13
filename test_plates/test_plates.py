@@ -5,10 +5,10 @@ def test_hello():
     assert is_valid("AA") == True
 
 def test_CS50():
-    assert is_valid("") == False
+    assert is_valid("??") == False
 
 def test_numbers_first():
-    assert is_valid("2A") == False
+    assert is_valid("AAA???") == False
 
 def test_zero_first():
     assert is_valid("22") == False
