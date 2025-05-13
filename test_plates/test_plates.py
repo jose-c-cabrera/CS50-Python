@@ -5,7 +5,7 @@ def test_hello():
     assert is_valid("AA") == True
 
 def test_CS50():
-    assert is_valid("A2") == False
+    assert is_valid("") == False
 
 def test_numbers_first():
     assert is_valid("2A") == False
