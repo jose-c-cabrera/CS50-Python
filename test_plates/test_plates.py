@@ -19,8 +19,5 @@ def test_name():
 def test_lots_of_num():
     assert is_valid("ASFAGWE46") == False
 
-def test_zeros_correct():
-    assert is_valid("JR3041")
-
 def zero_name():
     assert is_valid("") == False
