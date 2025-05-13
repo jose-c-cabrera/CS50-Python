@@ -10,6 +10,9 @@ def test_correct():
 def test_CS50():
     assert is_valid("??") == False
 
+def test_AAA():
+    assert is_valid("???AAA") == False
+
 def test_numbers_first():
     assert is_valid("AAA???") == False
 
