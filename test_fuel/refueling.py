@@ -3,11 +3,11 @@ def main():
 
 
 def convert(fraction):
-    
+
 while True:
     try:
-        users_input = input("Fraction: ")
-        x,y = users_input.split(sep='/')
+        fraction = input("Fraction: ")
+        x,y = fraction.split(sep='/')
         x = int(x)
         y = int(y)
         if x > y:
@@ -18,9 +18,14 @@ while True:
     else:
         break
 
-if percentage >= 99:
-    print("F")
-elif percentage <= 1:
-    print("E")
-else:
-    print(f"{percentage}%")
+def gauge(percentage):
+
+    if percentage >= 99:
+        return("F")
+    elif percentage <= 1:
+        return("E")
+    else:
+        return(f"{percentage}%")
+
+if __name__ == "__main__":
+    main()
