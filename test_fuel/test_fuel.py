@@ -1,5 +1,5 @@
 import pytest
-from refueling import convert, gauge
+from fuel import convert, gauge
 
 
 def test_convert():
