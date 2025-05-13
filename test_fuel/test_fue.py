@@ -1,9 +1,10 @@
+import pytest
 from refueling import convert, gauge
 
 
-def test_100():
+def test_full():
     assert convert("100/100") == 100
-    assert gauge(int(100)) == "F"
+    assert gauge(100) == "F"
 
 # def test_no_vowels():
 #     assert shorten("rhythm") == "rhythm"
