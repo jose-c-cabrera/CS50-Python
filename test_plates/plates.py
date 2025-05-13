@@ -26,4 +26,5 @@ def is_valid(proposition):
 
     return True
 
-main ()
+if __name__ == "__main__":
+    main ()
