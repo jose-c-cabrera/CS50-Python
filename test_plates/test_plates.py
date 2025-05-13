@@ -25,5 +25,7 @@ def test_name():
 def test_lots_of_num():
     assert is_valid("ASFAGWE46") == False
 
-def zero_name():
+def test_zero_name():
     assert is_valid("") == False
+
+
