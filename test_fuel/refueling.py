@@ -10,8 +10,6 @@ def main():
 
     print(gauge(percentage))
 
-
-
 def convert(fraction):
 
     x,y = fraction.split(sep='/')
