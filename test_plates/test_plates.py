@@ -2,19 +2,19 @@
 from plates import is_valid
 
 def test_hello():
-    assert shorten("aeiouAEIOU") == ""
+    assert is_valid("hello") == True
 
 def test_no_vowels():
-    assert shorten("rhythm") == "rhythm"
+    assert is_valid("CS50") == True
 
 def test_mixed_case():
-    assert shorten("TwItTeR") == "TwtTR"
+    assert is_valid("50CS") == False
 
 def test_sentence():
-    assert shorten("This is CS50") == "Ths s CS50"
+    assert is_valid("H0505") == False
 
 def test_numbers_and_symbols():
-    assert shorten("email@domain.com") == "ml@dmn.cm"
+    assert is_valid("Jose") == True
 
 def test_empty_string():
-    assert shorten("") == ""
+    assert is_valid("QC1403") == True
