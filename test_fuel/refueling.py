@@ -6,7 +6,7 @@ def convert(fraction):
 
 while True:
     try:
-        fraction = input("Fraction: ")
+
         x,y = fraction.split(sep='/')
         x = int(x)
         y = int(y)
