@@ -18,3 +18,6 @@ def test_name():
 
 def test_normal_plate():
     assert is_valid("QC1403") == True
+
+def test0():
+    assert is_valid("") == False
