@@ -15,3 +15,8 @@ def test_zero_first():
 
 def test_name():
     assert is_valid(" 2") == False
+
+def test_lots_of_num():
+    assert is_valid("ASFAGWE46") == False
+def test_name():
+    assert is_valid(" 2") == False
