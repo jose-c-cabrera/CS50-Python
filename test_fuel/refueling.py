@@ -1,24 +1,31 @@
 
 def main():
-    input = input("Fraction: ")
-    percentage = convert(input)
+    while True:
+        try:
+            fraction_input = input("Fraction: ")
+            percentage = convert(fraction_input)
+            break
+        except (ValueError, ZeroDivisionError):
+            continue
+
     print(gauge(percentage))
 
 
 
 def convert(fraction):
-    while True:
-        try:
-            x,y = fraction.split(sep='/')
-            x = int(x)
-            y = int(y)
-            if x > y:
-                continue
-            percentage = round((x/y)*100)
-        except (ValueError, ZeroDivisionError):
-            pass
-        else:
-            break
+
+    x,y = fraction.split(sep='/')
+    x = int(x)
+    y = int(y)
+
+     if y == 0:
+        raise ZeroDivisionError
+
+    if x > y:
+        raise ValueError("Numerator cannot be greater than denominator.")
+
+    percentage = round((x / y) * 100)
+    return percentage
 
 def gauge(percentage):
 
