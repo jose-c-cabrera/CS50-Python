@@ -32,7 +32,7 @@ def gauge(percentage):
     elif percentage <= 1:
         return("E")
     else:
-        return(f"{percentage}%")
+        return f"{percentage}%"
 
 if __name__ == "__main__":
     main()
