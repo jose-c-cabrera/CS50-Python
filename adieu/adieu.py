@@ -1,7 +1,8 @@
 import inflect
 
-while (True):
-    list 
-    name = input("Name: ")
+names = []
 
+while (True):
+    name = input("Name: ")
+    name
 
