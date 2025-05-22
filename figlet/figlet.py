@@ -1,12 +1,14 @@
+import random
 from pyfiglet import Figlet
+
 
 figlet = Figlet()
 
 figlet.getFonts()
 
-figlet.setFont(font = f)
+figlet.setFont(font = font.random)
 
-print(figlet.renderText(s))
+input = input("Input:" )
+print(f"Output:  {figlet.renderText(input)}")
 
-input = ("Input:" )
-print("Output: " )
+
