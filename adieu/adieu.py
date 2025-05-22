@@ -3,6 +3,6 @@ import inflect
 names = []
 
 while (True):
-    name = input("Name: ")
-    name
+    name_input = input("Name: ")
+    names.append(name_input)
 
