@@ -16,7 +16,8 @@ else:
 
 if f in figlet.getFonts():
     input = input("Input:" )
-    print(f"Output:  {figlet.renderText(s)}")
+    print(f"Output: ")
+    print(figlet.renderText(input))
 else:
     sys.exit("Invalid Usage")
 
