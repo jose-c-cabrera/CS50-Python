@@ -1,15 +1,13 @@
 import inflect
 
+p = inflect.engine()
 names = []
 
-while (True):
-    try:
+try:
+    while True:
         name_input = input("Name: ")
         names.append(name_input)
-
-        p.join(names)
-
-    except:
-        (ValueError, IndexError):
-        continue
+except EOFError:
+    print()
+    print("Adieu, adieu, to " p.join(names))
 
