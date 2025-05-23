@@ -7,7 +7,8 @@ while (True):
         name_input = input("Name: ")
         names.append(name_input)
 
-        for item in names:
+        p.join(names)
+
     except:
         (ValueError, IndexError):
         continue
