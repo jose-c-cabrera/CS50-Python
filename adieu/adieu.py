@@ -9,5 +9,5 @@ try:
         names.append(name_input)
 except EOFError:
     print()
-    print("Adieu, adieu, to " p.join(names))
+    print("Adieu, adieu, to " + p.join(names))
 
