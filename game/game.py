@@ -1,2 +1,7 @@
-while level != number:
-    level = input("Level: ")
+while True:
+    try:
+        level = input("Level: ")
+        number = int(level)
+        break
+    except:
+        ValueError
