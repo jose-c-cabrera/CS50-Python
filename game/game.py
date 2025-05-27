@@ -13,8 +13,6 @@ secret = random.randint(1, level)
 while True:
     try:
         guess = int(input("Guess: "))
-        if guess < 1 or guess > level:
-            continue
         if guess < secret:
             print("Too small!")
         elif guess > secret:
