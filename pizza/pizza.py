@@ -11,7 +11,8 @@ elif not sys.argv[1].endswith(".csv"):
 
 try:
     with open (sys.argv[1], "r") as csvfile:
-        for line in csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
             print(tabulate(table, headers="firstrow"))
 
 
