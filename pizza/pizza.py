@@ -10,5 +10,6 @@ elif not sys.argv[1].endswith(".csv"):
 
 try:
     with open (sys.argv[1], "r") as csvfile:
-        reader =
+        for line in csvfile:
+            
 
