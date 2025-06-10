@@ -9,7 +9,6 @@ elif len(sys.argv) < 2:
 elif not sys.argv[1].endswith(".csv"):
     sys.exit("Not a csv file")
 
-pizzas = []
 
 try:
     with open (sys.argv[1], "r") as csvfile:
@@ -17,4 +16,5 @@ try:
         for row in reader:
             print(tabulate(sys.argv[1], headers="firstrow"))
 
-
+except:
+     sys.exit("File does not exist")
