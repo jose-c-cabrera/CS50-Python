@@ -8,7 +8,8 @@ elif len(sys.argv) > 2:
 with open(sys.argv[1], "r") as file:
     for line in file:
         line_count +=1
-    
+        
+
 
 
 
