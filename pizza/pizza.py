@@ -14,8 +14,7 @@ try:
     with open (sys.argv[1], "r") as csvfile:
         reader = csv.DictReader(csvfile)
         table = [row for row in reader]
-        for row in reader:
-            print(tabulate(table, headers="keys", tablefmt="grid"))
+        print(tabulate.tabulate(table, headers="keys", tablefmt="grid"))
 
 except:
      sys.exit("File does not exist")
