@@ -12,7 +12,7 @@ line_count = 0
 try:
     with open(sys.argv[1], "r") as file:
         for line in file:
-            if line.strip() and not line.startswith("#"):
+            if not (line.lstrip().startswith("#") or line.strip() == ""):
                 line_count +=1
 except FileNotFoundError:
     sys.exit("File does not exist")
