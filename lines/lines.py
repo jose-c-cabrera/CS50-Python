@@ -10,7 +10,7 @@ elif not sys.argv[1].endswith(".py"):
 
 line_count = 0
 try:
-    with open(sys.argv[2], "r") as file:
+    with open(sys.argv[1], "r") as file:
         for line in file:
             if line.strip() and not line.startswith("#"):
                 line_count +=1
