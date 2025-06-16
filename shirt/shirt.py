@@ -1,3 +1,3 @@
 import sys
-import Pillow
-import 
+import PIL
+import
