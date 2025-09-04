@@ -1,5 +1,5 @@
 # Flashcards CLI (CS50 Final Project)
-#### Video Demo:  <VIDEO_URL_HERE>
+#### Video Demo:  [(https://youtu.be/0WUQw9rj7_s)]
 #### Description:
 
 This project is a command-line based flashcard learning tool written in Python.
